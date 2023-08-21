@@ -22,6 +22,10 @@ export class Router {
     .then(html => {
       document.querySelector('#app').innerHTML = html
     })
+    
+
+    const page = document.querySelector("[data-page]")
+    page.dataset.page = pathname
   }
 
 }

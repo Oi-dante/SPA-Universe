@@ -8,6 +8,8 @@
 :root{
   --ff-: 'Roboto', sans-serif;
   --primary-clr:#E1E1E6;
+  --nav-hover-clr:#fff;
+  --btn-hover-clr:#02799D;
 
   font-size: clamp(40%, 1% + 2vw, 62.5%);
 }
@@ -24,44 +26,84 @@ body[data-page = "/contact"]{
 
 body{ 
   font-family: var(--ff-);
+  max-height: 100%;
   background-repeat: no-repeat;
-  background-position: center 16%;
-  background-size:cover;
-
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 
 }
 
 /* NAV */
 nav{
+  display: flex;
+  align-items: center;
+  padding: 4.0rem 7.19rem 4.0rem 7.2rem;
+}
+
+nav a:hover{
+  color: var(--nav-hover-clr);
+  transition: ease-in 100ms;
 }
 
 a{
   font-size: 2.4rem;
   text-decoration: none;
   color: var(--primary-clr);
+  margin-left: 3.2rem;
 }
 
 /* HOME */
+.home-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.6rem;
+  margin: 172px;
+}
+
 h1{
   font-size: 4.8rem;
+  font-weight: 700;
   color: var(--primary-clr);
 }
 
-button{
+/* BUTTON-HOME-PAGE */
+.btn-home{
   background-color: transparent;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   color: var(--primary-clr);
-  padding: 1.2rem 3.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 1.2rem 3.2rem;
+
+
+  text-transform: uppercase; 
   border-radius: 5px;
   border: 2px solid #FFF;
   cursor: pointer;
+
+}
+.btn-home:hover{
+  color: var(--btn-hover-clr);
+  background-color: var(--primary-clr);
+  transition: ease-in 400ms;
 }
 
 /* UNIVERSO/EXPLORAÇÃO */
+.universe-page,
+.explorer-page{
+  margin-top: 6.3rem;
+  margin-left: 10.2rem;
+  margin-right: 2rem;
+}
+
 h2{
   font-size: 4.8rem;
   color: var(--primary-clr);
@@ -69,6 +111,9 @@ h2{
 
 p{
   color: var(--primary-clr);
+  line-height: 2.8rem;
   font-size: 1.8rem;
   font-weight: 400;
+  margin-top: 1.6rem;
+  max-width: 64.8rem;
 }

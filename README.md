@@ -16,9 +16,7 @@
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
   <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
 </a>
-<a href="https://developer.mozilla.org/en-US/docs/Glossary/Node.js" target="_blank">
-  <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white">
-</a>
+
 
 <h2>🚀Brief</h2>
 <p>

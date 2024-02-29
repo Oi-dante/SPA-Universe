@@ -67,7 +67,15 @@ a{
   align-items: center;
   justify-content: center;
   gap: 3.6rem;
-  margin: 172px;
+  margin: 172px auto;
+  max-width: 800px;
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    max-width:100%
+    margin: 2rem auto; 
+  }
 }
 
 h1{
